@@ -1,0 +1,186 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+}
+
+#panels-wrapper
+{
+	display: flex;
+	width: 1920px;
+	height: 850px;
+	justify-content: space-around;
+
+	background-color: #444;
+
+}
+
+
+input[type="checkbox"] {
+	margin:0px;
+}
+
+.force-hide{
+	 display: none;
+}
+
+
+
+#names-panel-container
+{
+	background-color: aqua;
+	width: 30%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	
+}
+
+#names-panel-container input
+{
+	
+	width: 100%;
+	height: 100%;
+	
+	
+}
+
+
+.text-input-name
+{
+	border-radius: 5px;
+	border-color: #939393;
+	background-color: #e5ecff;
+	
+}
+
+/*input[type=text]:focus {
+	border-width: 0px;
+}*/
+
+.text-input-subtext
+{
+	border-radius: 5px;
+	border-color: #939393;
+	background-color: #e5ecff;
+
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 5px;
+	padding-inline: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555;
+
+  }
+
+#preview-panel-container
+{
+	background-color: red;
+	width: 595px;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#templates-panel-container
+{
+	background-color: rgb(74, 41, 74);
+	width: 30%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#sidebar {
+	grid-area: sidebar;
+	overflow-y: scroll;
+}
+
+#content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+	font-family: Helvetica, sans-serif
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.sideBarItem{
+	max-height: 50px;
+	max-width: 50px;
+	padding:5px;
+}
+
+.sideBarItem img{
+	max-height: 50px;
+	max-Width:50px;
+}
+
+.colourPalette{
+	grid-area: colourP;
+	display:flex;
+	flex-direction:grid;
+	flex-flow: wrap;
+}
+
+.options{
+	grid-area: options;
+	padding: 15px;
+}
+
+.colourSwatches{
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	max-height: 40px;
+	max-width: 40px;
+	margin: 5px;
+}
+
+
+	.wrapper {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 70px 230px  minmax(500px, 1fr);
+		grid-template-rows: 35px minmax(500px, 1fr) 160px;
+		grid-template-areas:
+               "header header header"
+				"sidebar content content"
+                "colourP colourP options";
+		background-color: #fff;
+		color: #444;
+	}
+.box {
+  background-color: #444;
+  color: #fff;
+  font-size: 150%;
+}
+
+.header {
+  background-color: #999;
+}
+
+
+
+
